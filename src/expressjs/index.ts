@@ -1,4 +1,5 @@
-const express = require("express");
+import express from "express";
+import searchRoute from "./search";
 const app = express();
 const PORT = 3000;
 
@@ -7,7 +8,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 app.get("/", (req, res) => {
   res.send("Hello, Express.js!");
 });
-
+app.use("/", searchRoute);
 app.get("/stream-text", async (req, res) => {
   // Set headers for plain text streaming
   res.setHeader("Content-Type", "text/plain");
