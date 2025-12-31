@@ -1,4 +1,5 @@
 const server = Bun.serve({
+  port: 3001,
   // `routes` requires Bun v1.2.3+
   routes: {
     "/": new Response("Hello, Bun Server!"),

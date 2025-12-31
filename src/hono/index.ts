@@ -54,8 +54,11 @@ app.get("/event-stream", (c) => {
   });
 });
 
-const server = serve(app);
-console.log("Hono server is running on http://localhost:3000");
+const server = serve({
+  ...app,
+  port: 3003,
+});
+console.log("Hono server is running on http://localhost:3003");
 
 // graceful shutdown
 process.on("SIGINT", () => {

@@ -1,0 +1,27 @@
+[
+  {
+    "server": "node-http",
+    "requests": 104043.64,
+    "latency": 0.01
+  },
+  {
+    "server": "bun-server",
+    "requests": 129181.1,
+    "latency": 0.01
+  },
+  {
+    "server": "express",
+    "requests": 23509.1,
+    "latency": 0.05
+  },
+  {
+    "server": "hono",
+    "requests": 111089.46,
+    "latency": 0.01
+  },
+  {
+    "server": "elysia",
+    "requests": 128186.19,
+    "latency": 0.01
+  }
+]

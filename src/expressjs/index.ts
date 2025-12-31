@@ -1,7 +1,7 @@
 import express from "express";
 import searchRoute from "./search";
 const app = express();
-const PORT = 3000;
+const PORT = 3002;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
